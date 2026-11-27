@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "bro";
+    src: url("Cat Song.ttf");
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #fff5f7 0%, #fffbeb 50%, #f0f9ff 100%);
+    font-family: "bro";
+    font-size: 16px;
+    color: #334155;
+    scroll-behavior: smooth;
+}
+
+.topnav {
+    background: linear-gradient(90deg, #e11d48, #f97316, #eab308);
+    padding: 14px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 12px rgba(225, 29, 72, 0.2);
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 18px;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 230px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    text-align: left;
+    overflow: hidden;
+    border: 2px solid #ffe4e6;
+    z-index: 101;
+}
+
+.dropdown-content a {
+    color: #be123c;
+    display: block;
+    border-radius: 0;
+    padding: 11px 16px;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffe4e6;
+    transform: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-banner {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #ffe4e6;
+    border-bottom: 5px solid #fb7185;
+}
+
+.header-banner img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.section-subjudul h2 {
+    background: linear-gradient(90deg, #fb7185, #f59e0b);
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 30px auto 20px auto;
+    width: 85%;
+    max-width: 1000px;
+    border-radius: 25px;
+    font-size: 21px;
+    font-weight: 800;
+    box-shadow: 0px 4px 12px rgba(251, 113, 133, 0.25);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.kotak-info {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    padding: 28px;
+    border-radius: 24px;
+    border: 2px solid #fecdd3;
+    box-shadow: 0px 8px 20px rgba(244, 63, 94, 0.08);
+    line-height: 1.65;
+}
+
+.kotak-info h3 {
+    color: #e11d48;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.kotak-info p:last-child {
+    margin-bottom: 0;
+}
+
+.rounded-tex {
+    background-color: #fff1f2;
+    border: 2px solid #fda4af;
+    border-radius: 20px;
+    padding: 13px 20px;
+    margin: 12px 0;
+    transition: 0.3s;
+}
+
+.rounded-tex:nth-child(2) {
+    background-color: #fefce8;
+    border-color: #fde047;
+}
+
+.rounded-tex:nth-child(3) {
+    background-color: #ecfdf5;
+    border-color: #6ee7b7;
+}
+
+.rounded-tex:nth-child(4) {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+}
+
+.rounded-tex:hover {
+    transform: translateX(6px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.grid-kartu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 88%;
+    max-width: 1040px;
+    margin: 0 auto 30px auto;
+}
+
+.kartu {
+    background-color: white;
+    width: 280px;
+    padding: 22px;
+    border-radius: 22px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+    line-height: 1.55;
+    border: 2px solid #e2e8f0;
+}
+
+.kartu:nth-child(5n+1) {
+    background-color: #fff1f2;
+    border-color: #fda4af;
+}
+.kartu:nth-child(5n+1) h3 { color: #be123c; }
+
+.kartu:nth-child(5n+2) {
+    background-color: #fefce8;
+    border-color: #fde047;
+}
+.kartu:nth-child(5n+2) h3 { color: #b45309; }
+
+.kartu:nth-child(5n+3) {
+    background-color: #ecfdf5;
+    border-color: #6ee7b7;
+}
+.kartu:nth-child(5n+3) h3 { color: #047857; }
+
+.kartu:nth-child(5n+4) {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+}
+.kartu:nth-child(5n+4) h3 { color: #1d4ed8; }
+
+.kartu:nth-child(5n+5) {
+    background-color: #f5f3ff;
+    border-color: #c4b5fd;
+}
+.kartu:nth-child(5n+5) h3 { color: #6d28d9; }
+
+.kartu:hover {
+    transform: translateY(-7px) scale(1.01);
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+.kartu h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.ikon-sdg {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 12px auto;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.gambar-poster {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 4px solid #fda4af;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.kotak-kelompok {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.foto-kelompok img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #fda4af;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.teks-kelompok p {
+    margin: 4px 0;
+}
+
+.teks-kelompok ul {
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.teks-kelompok li {
+    margin: 2px 0;
+}
+
+.footer {
+    background: linear-gradient(90deg, #e11d48, #f97316, #eab308);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: 700;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .kotak-kelompok {
+        flex-direction: column;
+        text-align: center;
+    }
+    .teks-kelompok ul {
+        text-align: left;
+    }
+}
